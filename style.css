@@ -688,6 +688,13 @@ ul{
     margin: -20px 0px 0px 40px;
 }
 
+.success-message {
+  display: none;
+  color: #2ecc71;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 /***********Footer************/
 footer{
     margin: 0;
@@ -750,4 +757,5 @@ h5 {
     justify-content: center;
     position: relative;
     top: 120px;
+
 }
