@@ -83,3 +83,33 @@ const scriptURL =
             swal("Error", "Something went wrong. please try again!", "error");
           });
       });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("submit-to-google-sheet");
+    const successMessage = document.getElementById("successMessage");
+
+    if (!form || !successMessage) {
+      console.error("Form or success message element not found.");
+      return;
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Stop page refresh
+
+      if (form.checkValidity()) {
+        // Show success message
+        successMessage.style.display = "block";
+
+        // Reset form fields
+        form.reset();
+
+        // Hide message after 3 seconds
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 3000);
+      } else {
+        // Trigger HTML validation messages
+        form.reportValidity();
+      }
+    });
+  });
