@@ -759,3 +759,205 @@ h5 {
     top: 120px;
 
 }
+
+/* ============================
+   RESPONSIVE FIXES (NON-DESTRUCTIVE)
+   ============================ */
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header .logo img {
+    margin-left: 0;
+  }
+
+  header h2 {
+    margin-right: 0;
+  }
+
+  header nav {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  section .content {
+    margin-left: 80px;
+    width: 80%;
+  }
+
+  .image-container {
+    float: none;
+    margin: 80px auto 0;
+    position: relative;
+  }
+
+  .image-container img {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-section .about-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .about-img-container {
+    margin: 100px auto;
+  }
+
+  .about-content .description {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .form-container {
+    margin: 100px auto;
+  }
+
+  .form-container-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mess-sign-img {
+    margin: 100px auto;
+  }
+
+  .Sample-Work-Video video {
+    width: 80%;
+    margin: auto;
+  }
+
+  .Sample-Work-Video img {
+    width: 40%;
+    margin: -200px auto 0;
+    display: block;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    margin: 40px auto;
+  }
+
+  .footer h4 {
+    margin-left: 0;
+  }
+
+  .footer a,
+  .footer h3 {
+    margin: 10px 0;
+  }
+}
+
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+
+  header nav a {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  section .content {
+    margin: 60px auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  section .content h1 {
+    font-size: 52px;
+  }
+
+  section .content .description {
+    width: 100%;
+  }
+
+  .content .cv-button {
+    margin: 40px auto;
+    display: block;
+  }
+
+  .social-links .fab {
+    margin: 20px;
+  }
+
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .services-section .title {
+    font-size: 36px;
+  }
+
+  .service-container {
+    gap: 20px;
+  }
+
+  .Sample-work-header {
+    font-size: 36px;
+  }
+
+  .Contact-message {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .signature {
+    margin: auto;
+  }
+
+  .top-btn {
+    right: 20px;
+  }
+}
+
+
+/* ---------- Small Phones (≤480px) ---------- */
+@media (max-width: 480px) {
+
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header nav a {
+    font-size: 18px;
+  }
+
+  section .content h1 {
+    font-size: 44px;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .Sample-Work-Video video {
+    width: 95%;
+  }
+
+  .Sample-Work-Video img {
+    width: 60%;
+    margin-top: -120px;
+  }
+}
